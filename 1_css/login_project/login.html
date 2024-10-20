@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #2d2d2d;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form {
+            background-color: #3B79D7;
+            height: 350px;
+            width: 300px;
+            border-radius: 10px;
+            padding: 15px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 30px;
+            margin: 10px auto;
+        }
+
+        input {
+            background-color: #3B79D7;
+            border: 2px solid #fff;
+            border-radius: 5px; 
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        input:focus {
+            color: #fff;
+            border: 2px solid #fff;
+            font-size: 18px;
+            outline: none;
+        }
+
+        ::placeholder {
+            color: #fff;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #3B79D7;
+            color: #fff;
+            display: inline;
+            font-size: 22px;
+            font-weight: bold;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            margin: 5px;
+            padding: 5px 10px;
+            width: 50%;
+        }
+
+        #sign-up {
+            background-color: #00A830;
+        }
+
+        #login {
+            background-color: #C54942;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" class="login-form">
+        <h2>Login / Sign Up Form</h2>
+        <input type="text" name="email-phone" id="email-phone" placeholder="Email / Phone Number" autocomplete="off" spellcheck="false">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <div class="button-container">
+            <button id="sign-up">Sign Up</button>
+            <button id="login">Login</button>
+        </div>
+    </form>
+    
+</body>
+</html>
